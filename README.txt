@@ -18,4 +18,4 @@ The file 'Example4.R' contains the code that executes Example 4 of the simulatio
 
 ./data/
 
-The files "dna," "genes," "10 X genes," and "Scheetz2006.rds" contain the datasets referenced in Section 5.3 of the main text, as well as in Sections G.2 and G.3 of the supplementary materials, respectively. The "dna" and "genes" datasets represent the response variable Y and the covariates X, respectively, in the dataset described in Section 5.3.
+The files "dna.csv," "genes.csv," "10 X genes.RData," and "Scheetz2006.rds" contain the datasets referenced in Section 5.3 of the main text, as well as in Sections G.2 and G.3 of the supplementary materials, respectively. The "dna" and "genes" datasets represent the response variable Y and the covariates X, respectively, in the dataset described in Section 5.3.
