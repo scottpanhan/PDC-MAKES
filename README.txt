@@ -2,7 +2,7 @@ This is the computer programs for
 "PDC-MAKES: A Conditional Screening Method for Controlling False Discoveries in High-dimensional Multi-response Setting” 
 by Wei Xiong, Han Pan, and Tong Shen.
 
-You first need to install R packages "energy","MFSIS","doParallel","mvtnorm" , "knockoff" and "Ball".  Then The "PCSIS.py" Python script should be placed in the appropriate directory within the MFSIS R package folder. Specifically, you need to place the file in the python subfolder under the main MFSIS package directory.
+You first need to install R packages "energy","MFSIS","doParallel","mvtnorm" , "knockoff" and "Ball".  Subsequently, the "PCSIS.py" Python script should be placed in the appropriate directory within the MFSIS R package folder. Specifically, the original "PCSIS.py" file located in the "python" subfolder under the main MFSIS package directory must be replaced with the newly provided "PCSIS.py" file.
 
 ./codes/
 
