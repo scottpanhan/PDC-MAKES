@@ -25,7 +25,7 @@ PDC_SIS<-function(y,x,subset=FALSE,quant_boot,dn){
     start_time<-Sys.time()
     PDC=c()
     for (i in 1:p){
-      PDC[i]=(pdcor(y,x[,i],x[,index_set]))^2
+      PDC[i]=(pdcor(y,x[,i],x[,-i]))^2
     }
     PDCC=order(PDC,decreasing = T)[1:dn]
     end_time<-Sys.time()
@@ -96,7 +96,7 @@ rPDC_SIS<-function(y,x,subset=FALSE,quant_boot,dn){
     }
     PDC=c()
     for (i in 1:p){
-      PDC[i]=(pdcor(ynew,xnew[,i],xnew[,index_set]))^2
+      PDC[i]=(pdcor(ynew,xnew[,i],xnew[,-i]))^2
     }
     PDCC=order(PDC,decreasing = T)[1:dn]
     end_time<-Sys.time()
@@ -228,7 +228,7 @@ PC_SIS<-function(x,y,multi=FALSE,dn){
     end_time<-Sys.time()
     times=end_time-start_time
   }
-  return(list(select=PDCC,Time=times))
+  return(list(select=PCC,Time=times))
 }
 ##########################################################################################################
 ##
