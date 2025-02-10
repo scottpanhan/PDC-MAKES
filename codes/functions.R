@@ -224,7 +224,7 @@ PC_SIS<-function(x,y,multi=FALSE,dn){
       A = order(result, decreasing = TRUE)
       return(A[1:nsis])
     }
-    PCC=pcsis(x,y,nsis = p)
+    PCC=pcsis(x,y,nsis = dn)
     end_time<-Sys.time()
     times=end_time-start_time
   }
